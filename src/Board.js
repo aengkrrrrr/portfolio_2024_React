@@ -2,15 +2,32 @@ import React, { Component, useEffect, useState } from 'react';
 // import Button from 'react-bootstrap/Button';
 import BoardMenu from './BoardMenu';
 import BoardList from './BoardList';
+import Write from './Write';
+import View from './View';
 import Option from './Option';
 
 
 function Board(){
   const [isShown, setIsShown] = useState(false);
+  const [activeComponent, setActiveComponent] = useState(null);
 
   const handleToggle = () => {
     setIsShown(!isShown);
   };
+
+  const showBoardList = () => {
+    setActiveComponent('BoardList');
+  };
+
+  const showWrite = () => {
+    setActiveComponent('Write');
+  };
+
+  const showView = () => {
+    setActiveComponent('View');
+  };
+
+
   return (
     <>
     <div className="modal_board">
@@ -24,14 +41,12 @@ function Board(){
           <h3>Board</h3>
         </div>
         <div className="board_body df">
-          <BoardMenu></BoardMenu>
+          <BoardMenu showBoardList={showBoardList} showWrite={showWrite}></BoardMenu>
           <div className="board_ct">
-            <BoardList></BoardList>
-            <div class="btn-group me-2" role="group" aria-label="First group">
-              <button type="button" class="btn btn-outline-secondary">1</button>
-              <button type="button" class="btn btn-outline-secondary">2</button>
-              <button type="button" class="btn btn-outline-secondary">3</button>
-            </div>
+          {activeComponent === 'BoardList' && <BoardList showView={showView} />}
+          {activeComponent === 'Write' && <Write />}
+          {activeComponent === 'View' && <View />}
+
           </div>
         </div>
       </div>

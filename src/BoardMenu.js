@@ -1,7 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import MenuImg from './images/chu_image.png';
+import BoardList from './BoardList';
+import Write from './Write';
 
-function BoardMenu(){
+function BoardMenu({showBoardList, showWrite}){
+
   return (
     <>
     <aside className="icon_wrap df fdc">
@@ -9,18 +12,22 @@ function BoardMenu(){
          <img src={MenuImg} alt='사용자 이미지' />
           <span>CHU</span>
         </div>
-        <div className="icon_02 df fdc aic">
-          <a href=""><span className="material-symbols-outlined">team_dashboard</span></a>
-          <a href=""><span>Board</span></a>
+        <div className="icon_02 df fdc aic" onClick={showBoardList}>
+          <button><span className="material-symbols-outlined">team_dashboard</span></button>
+          <button><span>Board</span></button>
         </div>
-        <div className="icon_03 df fdc aic">
-          <a href=""><span className="material-symbols-outlined">edit_square</span></a>
-          <a href=""><span>Write</span></a>
+        <div className="icon_03 df fdc aic" onClick={showWrite}>
+          <button><span className="material-symbols-outlined">edit_square</span></button>
+          <button><span>Write</span></button>
         </div>
         <div className="icon_04 df fdc aic">
-          <a href=""><span className="material-symbols-outlined">mail</span></a>
-          <a href=""><span>Mail</span></a>
+          <button><span className="material-symbols-outlined">mail</span></button>
+          <button><span>Mail</span></button>
         </div>
+
+        <div>
+       
+      </div>
       </aside>
   </>
   )  

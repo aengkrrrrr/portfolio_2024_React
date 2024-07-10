@@ -45,8 +45,8 @@
   width: 620px;
   height: 1px;
   background: var(--C-white);
-  /* animation: intro 3s linear; */
-  /* -webkit-animation-fill-mode:both; */
+  animation: intro 3s linear;
+   -webkit-animation-fill-mode:both;
 }
 @keyframes intro {
   0% {
