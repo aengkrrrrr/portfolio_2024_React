@@ -1,6 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import BoardMenu from './BoardMenu';
-import ListImg from './images/chu_image.png';
 
 function OptionMenu(){
     // 상태를 선언하고 초기값을 'hide'로 설정합니다.
