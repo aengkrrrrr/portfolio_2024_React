@@ -1,7 +1,7 @@
 import React, { Component, useEffect, useState } from 'react';
 // import Button from 'react-bootstrap/Button';
 import BoardMenu from './BoardMenu';
-import Option from './Option';
+import OptionMenu from './OptionMenu';
 import ListImg from './images/chu_image.png';
 
 function BoardList(){

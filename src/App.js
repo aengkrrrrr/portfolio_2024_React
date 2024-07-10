@@ -12,7 +12,7 @@ import Pro04 from './Pro04';
 import Pro05 from './Pro05';
 import Pro06 from './Pro06';
 import Contact from './Contact';
-import Option from './Option';
+import OptionMenu from './OptionMenu';
 import BoardList from './BoardList';
 
 function App() {
@@ -31,7 +31,7 @@ function App() {
       <Contact></Contact>
     </main>
     <Footer></Footer>
-    <Option></Option>
+    <OptionMenu></OptionMenu>
     <BoardList></BoardList>
   </div>
   );
