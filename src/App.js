@@ -12,8 +12,8 @@ import Pro04 from './Pro04';
 import Pro05 from './Pro05';
 import Pro06 from './Pro06';
 import Contact from './Contact';
-import OptionMenu from './OptionMenu';
-import BoardList from './BoardList';
+import Option from './Option';
+import Board from './Board';
 
 function App() {
   return (
@@ -31,8 +31,8 @@ function App() {
       <Contact></Contact>
     </main>
     <Footer></Footer>
-    <OptionMenu></OptionMenu>
-    <BoardList></BoardList>
+    <Option></Option>
+    <Board></Board>
   </div>
   );
 }

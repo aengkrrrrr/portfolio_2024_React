@@ -294,7 +294,7 @@
 }
 
  /* modal board */
- #board_wrap {
+ .board_wrap {
   visibility: hidden;
   opacity: 0;
   position: fixed;

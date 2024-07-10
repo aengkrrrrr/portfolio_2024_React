@@ -1,35 +1,44 @@
-import React, { Component } from 'react'
-import { Link } from 'react-router-dom';
+import React, { Component, useEffect, useState } from 'react';
+// import Button from 'react-bootstrap/Button';
+import BoardMenu from './BoardMenu';
+import BoardList from './BoardList';
+import Option from './Option';
 
-export default class Board extends Component {
-  
-  render() {
-    console.log(this.props.data);
-    let date = this.props.data.update_date !== '0000-00-00' ? this.props.data.update_date : this.props.data.date;
 
-    return (
-      <tr>              
-        <th scope="row">
-        <input 
-          type="checkbox"          
-          onChange={(e)=>{
-            this.props.onCheckboxChange(
-              e.target.checked,
-              e.target.value
-            )}
-          } 
-          value={this.props.data.id}
-        />
-        </th>
-        <td>{this.props.data.id}</td>
-        <td>
-          <Link to={`/view?id=${this.props.data.id}`}>
-            {this.props.data.title}
-          </Link>
-          </td>
-        <td>{this.props.data.user_id}</td>
-        <td>{date}</td>
-      </tr>
-    )
-  }
+function Board(){
+  const [isShown, setIsShown] = useState(false);
+
+  const handleToggle = () => {
+    setIsShown(!isShown);
+  };
+  return (
+    <>
+    <div className="modal_board">
+      <div className={`board_wrap ${isShown ? 'show' : ''}`}>
+        <div className="board_head df aic">
+          <div className="btn_wrap df aic">
+          <button className="close_btn modal_btn" onClick={handleToggle}></button>
+            <span className="modal_btn"></span>
+            <span className="modal_btn"></span>
+          </div>
+          <h3>Board</h3>
+        </div>
+        <div className="board_body df">
+          <BoardMenu></BoardMenu>
+          <div className="board_ct">
+            <BoardList></BoardList>
+            <div class="btn-group me-2" role="group" aria-label="First group">
+              <button type="button" class="btn btn-outline-secondary">1</button>
+              <button type="button" class="btn btn-outline-secondary">2</button>
+              <button type="button" class="btn btn-outline-secondary">3</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <Option isShown={isShown} handleToggle={handleToggle} />
+    </div>  
+    </>
+  );
 }
+
+export default Board;
