@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import Axios from 'axios';
 // import Button from 'react-bootstrap/Button';
 import WriteImg from './images/view_img.png';
 
@@ -20,6 +21,29 @@ function Write({boardId, handleCancle, isModifyMode}){
       console.log(error);
     });
   }
+
+  let update = () =>{
+    Axios.post('http://34.64.203.251:8000/update',{
+      id:boardId,
+      title: form.title,
+      content: form.content
+    })
+    .then( res => {
+     alert('수정 완료');
+      
+     setForm({
+      title:'',
+      content:''
+     });
+
+     handleCancle();
+
+    })
+    .catch(function (error) {     
+      console.log(error);
+    });
+  }
+
 
   let detail = () =>{
     Axios.get(`http://34.64.203.251:8000/detail?id=${boardId}`)
