@@ -12,8 +12,9 @@ function About(){
         <em className="ti" data-aos="fade-up">circle03</em>
       </div>
       <video muted autoPlay loop>
-        <source src="./sample.webm" type="video/mp4" />
-        </video>
+        <source src="/sample.webm" type="video/webm" />
+        Your browser does not support the video tag.
+      </video>
       <div className="para_wrap">
         <p>Positive Adventurous Cooperative Developer Positive Adventurous Cooperative Developer Positive Adventurous Cooperative Developer Positive Adventurous Cooperative Developer</p>
         <p>Positive Adventurous Cooperative Developer Positive Adventurous Cooperative Developer Positive Adventurous Cooperative Developer Positive Adventurous Cooperative Developer</p>

@@ -14,11 +14,24 @@ import Pro06 from './Pro06';
 import Contact from './Contact';
 import Option from './Option';
 import Board from './Board';
+import React, { useRef } from 'react';
 
 function App() {
+
+  const scrollToSection = (sectionId) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      window.scrollTo({
+        top: element.offsetTop,
+        behavior: 'smooth',
+      });
+    }
+  };
+  
   return (
   <div>
-    <Header></Header>
+    <Header onScroll={scrollToSection} >
+    </Header>
     <main>
       <Intro></Intro>
       <About></About>
