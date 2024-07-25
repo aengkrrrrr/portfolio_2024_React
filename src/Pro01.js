@@ -26,8 +26,8 @@ function Pro01(){
             기획부터 디자인까지 새롭게 리뉴얼한<br/>
             PC반응형 사이트입니다.</p>
           <div className="link_wrap df aic">
-            <a href=""><span className="material-symbols-outlined">open_in_new</span></a>
-            <a href=""> <img src={gitImg} alt='깃허브 이미지' className="link_git" /></a>
+            <a href="http://srimm3399.dothome.co.kr/clean_kangaroo/admin/login/login.php" target='_blank'><span className="material-symbols-outlined">open_in_new</span></a>
+            <a href="https://github.com/aengkrrrrr/clean_kangaroo.git" target='_blank'> <img src={gitImg} alt='깃허브 이미지' className="link_git" /></a>
           </div>
        </div>
       </div>

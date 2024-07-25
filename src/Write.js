@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Axios from 'axios';
 // import Button from 'react-bootstrap/Button';
+import Form from 'react-bootstrap/Form';
 import WriteImg from './images/view_img.png';
 
 function Write({boardId, handleCancle, isModifyMode}){
@@ -25,14 +26,14 @@ function Write({boardId, handleCancle, isModifyMode}){
   let update = () =>{
     Axios.post('http://34.64.203.251:8000/update',{
       id:boardId,
-      title: form.title,
+      name: form.name,
       content: form.content
     })
     .then( res => {
      alert('수정 완료');
       
      setForm({
-      title:'',
+      name:'',
       content:''
      });
 
@@ -75,24 +76,37 @@ function Write({boardId, handleCancle, isModifyMode}){
 
   return (
     <>
+
+
+    
       <div className="write_wrap df aic">
           <div className="img_wrap">
             <img src={WriteImg} alt='게시판 작성 이미지' />
           </div>
-          <form className="write_ct_wrap">
-            <div className="mb-3" controlId="name">
-              <label for="name" className="form-label">이름</label>
-              <input type="email" className="form-control" name="name" id="name" placeholder="이름을 입력하세요"
-               onChange={inputHandler}
-               value={form.name}/>
-            </div>
-            <div className="mb-4" controlId="content">
-              <label for="content" className="form-label">댓글</label>
-              <textarea className="form-control" name="content" id="content" rows="5" placeholder="이름을 입력하세요"
-               onChange={inputHandler}
-               value={form.content}
-               ></textarea>
-            </div>
+          <Form>
+          <Form.Group className="write_ct_wrap mb-4">
+              <Form.Label>이름</Form.Label>
+              <Form.Control
+              type="text" 
+              name="name"
+              placeholder="이름을 입력하세요" 
+              onChange={inputHandler}
+              value={form.name}
+              />
+              </Form.Group> 
+            
+            <Form.Group className="mb-4" controlId="content">
+            <Form.Label>댓글</Form.Label>
+            <Form.Control
+              type="text" 
+              name="content"
+              placeholder="댓글을 입력하세요" 
+              rows="8"
+              onChange={inputHandler}
+              value={form.content}
+              />
+            </Form.Group>
+      
             <div className="write_btn_wrap df aic">
               <button type="button" className="btn btn-primary"
               onClick={
@@ -100,7 +114,7 @@ function Write({boardId, handleCancle, isModifyMode}){
               }>등록</button>
               <a href=""><span className="material-symbols-outlined">reply</span></a>
             </div>
-          </form>
+            </Form>
         </div>
   
     </>

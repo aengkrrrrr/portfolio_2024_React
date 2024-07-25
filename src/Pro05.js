@@ -26,8 +26,8 @@ function Pro05(){
             기획부터 디자인까지 새롭게 리뉴얼한<br/>
             PC반응형 사이트입니다.</p>
           <div class="link_wrap df aic">
-            <a href=""><span class="material-symbols-outlined">open_in_new</span></a>
-            <a href=""><img src={gitImg} alt='깃허브 이미지' className="link_git" /></a>
+            <a href="http://srimm3399.dothome.co.kr/lottewelfood/index.html" target='_blank'><span class="material-symbols-outlined">open_in_new</span></a>
+            <a href="" target='_blank'><img src={gitImg} alt='깃허브 이미지' className="link_git" /></a>
           </div>
        </div>
       </div>
