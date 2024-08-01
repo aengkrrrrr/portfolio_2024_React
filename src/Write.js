@@ -11,7 +11,7 @@ function Write({boardId, handleCancle, isModifyMode}){
   })
 
   let write = () =>{
-    Axios.post('http://34.64.203.251:8000/insert',{
+    Axios.post('http://127.0.0.1:9000/insert',{
       name: form.name,
       content: form.content
     })
@@ -24,7 +24,7 @@ function Write({boardId, handleCancle, isModifyMode}){
   }
 
   let update = () =>{
-    Axios.post('http://34.64.203.251:8000/update',{
+    Axios.post('http://127.0.0.1:9000/update',{
       id:boardId,
       name: form.name,
       content: form.content
@@ -47,7 +47,7 @@ function Write({boardId, handleCancle, isModifyMode}){
 
 
   let detail = () =>{
-    Axios.get(`http://34.64.203.251:8000/detail?id=${boardId}`)
+    Axios.get(`http://127.0.0.1:9000/detail?id=${boardId}`)
     .then( res => {
       if(res.data.length > 0){
         setForm({
@@ -101,7 +101,8 @@ function Write({boardId, handleCancle, isModifyMode}){
               type="text" 
               name="content"
               placeholder="댓글을 입력하세요" 
-              rows="8"
+              as="textarea"
+              rows="5"
               onChange={inputHandler}
               value={form.content}
               />

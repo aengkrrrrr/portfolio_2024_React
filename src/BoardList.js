@@ -5,12 +5,11 @@ import ListImg from './images/board_list_img.png';
 
 function BoardList({ showView, isComplete, data }) {
   const [boardList, setBoardList] = useState([]);
-  const [checkList, setCheckList] = useState([]);
   const [boardId, setBoardId] = useState(0);
   const [currentPage, setCurrentPage] = useState(1);
   const [pageGroup, setPageGroup] = useState(0);
 
-  const itemsPerPage = 3; // 한 페이지당 표시할 게시글 수
+  const itemsPerPage = 4; // 한 페이지당 표시할 게시글 수
   const pagesPerGroup = 3; // 한 그룹당 표시할 페이지 버튼 수
 
   const ClickPd = (e) => {
@@ -20,11 +19,11 @@ function BoardList({ showView, isComplete, data }) {
   let date = data && data.update_date !== '0000-00-00' ? data.update_date : data?.date || '';
 
   const getList = () => {
-    Axios.get('http://34.64.203.251:8000/list')
+    Axios.get('http://127.0.0.1:9000/list')
       .then((res) => {
         const data = res.data;
+        console.log("Fetched data:", res.data)
         setBoardList(data);
-        setCheckList([]);
         setBoardId(0);
         // props.renderComplete(); // 목록 출력 완료 함수가 정의되지 않아 주석 처리
       })
@@ -36,31 +35,6 @@ function BoardList({ showView, isComplete, data }) {
   useEffect(() => {
     getList();
   }, []); // 최초 한 번 실행, 결과가 나오면 실행
-
-  const onCheckboxChange = (checked, id) => {
-    let list = [...checkList];
-    if (checked) {
-      if (list.indexOf(id) === -1) {
-        list.push(id);
-      }
-    } else {
-      let idx = list.indexOf(id);
-      list.splice(idx, 1);
-    }
-    setCheckList(list);
-  };
-
-  const deleteBoards = () => {
-    Axios.post('http://34.64.203.251:8000/delete', {
-      boardIdList: checkList.join(',')
-    })
-      .then((res) => {
-        getList();
-      })
-      .catch(function (error) {
-        console.log(error);
-      });
-  };
 
   useEffect(() => {
     if (!isComplete) {
@@ -96,11 +70,11 @@ function BoardList({ showView, isComplete, data }) {
               <img src={ListImg} alt="게시판 이미지" />
               <div className="list_ct df fdc">
                 <a href="" onClick={ClickPd}>
-                  <strong onClick={() => showView(board.id)}>{board.title}</strong>
+                  <strong onClick={() => showView(board.id)}>{board.name}</strong>
                 </a>
                 <p>{board.content}</p>
               </div>
-              <em>{date}</em>
+              <em>{board.update_date}</em>
             </li>
           ))}
       </ul>

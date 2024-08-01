@@ -1,8 +1,23 @@
 import React, { useState, useEffect } from 'react';
-// import Button from 'react-bootstrap/Button';
+import Axios from 'axios';
 import ViewImg from './images/view_img.png';
 
-function View() {
+function View({ id }) {
+  const [board, setBoard] = useState(null);
+
+  useEffect(() => {
+    if (id) {
+      Axios.get(`http://127.0.0.1:9000/view/${id}`)
+        .then((res) => {
+          setBoard(res.data);
+        })
+        .catch((error) => {
+          console.log(error);
+        });
+    }
+  }, [id]);
+
+  if (!board) return <div>Loading...</div>;
 
   return (
     <>
@@ -12,10 +27,10 @@ function View() {
         </div>
         <form className="view_ct_wrap">
           <div className="view_ct df aic">
-            <strong>제목입니다.</strong>
-            <em>17:15</em>
+            <strong>{board.name}</strong>
+            <em>{board.update_date}</em>
           </div>
-          <p>정말 멋진 포트폴리오 페이지입니다. 나는 당신을 당장 채용하고 싶다. 정말 멋진 포트폴리오 페이지입니다. 나는 당신을 당장 채용하고 싶다. 정말 멋진 포트폴리오 페이지입니다. 나는 당신을 당장 채용하고 싶다.</p>
+          <p>{board.content}</p>
           <div className="view_btn_wrap df aic">
             <button type="button" className="btn btn-secondary">수정</button>
             <button type="button" className="btn btn-danger">삭제</button>
@@ -23,9 +38,8 @@ function View() {
           </div>
         </form>
       </div>
-
     </>
-  )
+  );
 }
 
 export default View;
