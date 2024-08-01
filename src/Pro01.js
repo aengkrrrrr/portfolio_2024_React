@@ -22,9 +22,9 @@ function Pro01(){
             <em className="primary_btn">PHP</em>
             <em className="primary_btn">MYSQL</em>
           </div>
-          <p className="pj_p">시멘틱 태그를 활용하고 웹접근성에 준수하여,<br/>
-            기획부터 디자인까지 새롭게 리뉴얼한<br/>
-            PC반응형 사이트입니다.</p>
+          <p className="pj_p">빠르고 쉽게 배울 수 있다는 컨셉의<br/>
+            딥러닝캥거루 LMS 학습 쇼핑몰 사이트의<br/>
+            관리자 페이지입니다.</p>
           <div className="link_wrap df aic">
             <a href="http://srimm3399.dothome.co.kr/clean_kangaroo/admin/login/login.php" target='_blank'><span className="material-symbols-outlined">open_in_new</span></a>
             <a href="https://github.com/aengkrrrrr/clean_kangaroo.git" target='_blank'> <img src={gitImg} alt='깃허브 이미지' className="link_git" /></a>

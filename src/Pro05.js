@@ -10,7 +10,7 @@ function Pro05(){
       <div class="content_wrap df aic">
       <img src={proImg} alt='롯데웰푸드 이미지' className="project_img" />
         <div class="project_ct_r">
-          <h4 class="h4 mb-5">LMS 학습 쇼핑몰 - 관리자</h4>
+          <h4 class="h4 mb-5">롯데웰푸드</h4>
           <div class="tech_wrap df mb-3">
             <em class="primary_btn">팀</em>
             <em class="primary_btn">HTML</em>
@@ -22,9 +22,8 @@ function Pro05(){
             <em class="primary_btn">PHP</em>
             <em class="primary_btn">MYSQL</em>
           </div>
-          <p class="pj_p">시멘틱 태그를 활용하고 웹접근성에 준수하여,<br/>
-            기획부터 디자인까지 새롭게 리뉴얼한<br/>
-            PC반응형 사이트입니다.</p>
+          <p className="pj_p">시멘틱 태그를 활용하고 웹접근성에 준수하여,<br/>
+          클론코딩한 PC반응형 사이트입니다.</p>
           <div class="link_wrap df aic">
             <a href="http://srimm3399.dothome.co.kr/lottewelfood/index.html" target='_blank'><span class="material-symbols-outlined">open_in_new</span></a>
             <a href="" target='_blank'><img src={gitImg} alt='깃허브 이미지' className="link_git" /></a>

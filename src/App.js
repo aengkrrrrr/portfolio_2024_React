@@ -16,6 +16,7 @@ import Option from './Option';
 import Board from './Board';
 import React, { useRef } from 'react';
 
+
 function App() {
 
   const scrollToSection = (sectionId) => {

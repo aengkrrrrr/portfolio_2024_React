@@ -10,7 +10,7 @@ function Pro03(){
       <div className="content_wrap df aic">
       <img src={proImg} alt='미래에셋 이미지' className="project_img" />
         <div className="project_ct_r">
-          <h4 className="h4 mb-5">LMS 학습 쇼핑몰 - 관리자</h4>
+          <h4 className="h4 mb-5">미래에셋그룹</h4>
           <div className="tech_wrap df mb-3">
             <em className="primary_btn">팀</em>
             <em className="primary_btn">HTML</em>

@@ -9,7 +9,7 @@ function Pro04(){
     <section className="project04 pr_grid">
       <div className="content_wrap df aic">
         <div className="project_ct_">
-          <h4 className="h4 mb-5">LMS 학습 쇼핑몰 - 사용자</h4>
+          <h4 className="h4 mb-5">나스 코스메틱</h4>
           <div className="tech_wrap df mb-3">
             <em className="primary_btn">팀</em>
             <em className="primary_btn">HTML</em>
@@ -21,9 +21,10 @@ function Pro04(){
             <em className="primary_btn">PHP</em>
             <em className="primary_btn">MYSQL</em>
           </div>
-          <p className="pj_p">시멘틱 태그를 활용하고 웹접근성에 준수하여,<br/>
-            기획부터 디자인까지 새롭게 리뉴얼한<br/>
-            PC반응형 사이트입니다.</p>
+          <p className="pj_p">
+            기획부터 디자인까지 새롭게 리뉴얼하고,<br/>
+            바닐라 자바스크립트를 최대한 활용하여 제작한<br/>
+            리뉴얼 사이트입니다.</p>
           <div className="link_wrap df aic">
             <a href="http://srimm3399.dothome.co.kr/nars/index.html" target='_blank'><span className="material-symbols-outlined">open_in_new</span></a>
             <a href="https://github.com/aengkrrrrr/NARS.git" target='_blank'><img src={gitImg} alt='깃허브 이미지' className="link_git" /></a>
