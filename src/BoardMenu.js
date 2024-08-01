@@ -21,7 +21,9 @@ function BoardMenu({showBoardList, showWrite}){
           <button><span>Write</span></button>
         </div>
         <div className="icon_04 df fdc aic">
-          <button><span className="material-symbols-outlined">mail</span></button>
+
+        <a target="_blank" href="mailto:srimm3399@naver.com?subject=제목입니다.">
+        <span className="material-symbols-outlined">mail</span></a>
           <button><span>Mail</span></button>
         </div>
 
