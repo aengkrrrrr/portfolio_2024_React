@@ -32,6 +32,11 @@ function Board() {
     }
   };
 
+  // Write 컴포넌트의 등록 완료 후 호출될 함수
+  const handleWriteSuccess = () => {
+    setActiveComponent('BoardList');
+  };
+
   return (
     <>
       <div className="modal_board">
@@ -53,7 +58,7 @@ function Board() {
             />
             <div className="board_ct">
               {activeComponent === 'BoardList' && <BoardList showView={showView} />}
-              {activeComponent === 'Write' && <Write />}
+              {activeComponent === 'Write' && <Write handleSuccess={handleWriteSuccess} />}
               {activeComponent === 'View' && <View />}
             </div>
           </div>

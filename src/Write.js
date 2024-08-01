@@ -4,7 +4,7 @@ import Axios from 'axios';
 import Form from 'react-bootstrap/Form';
 import WriteImg from './images/view_img.png';
 
-function Write({boardId, handleCancle, isModifyMode}){
+function Write({boardId, handleCancle, isModifyMode,handleSuccess}){
   const[form, setForm] = useState( {
     name: '',
     content:''
@@ -17,6 +17,7 @@ function Write({boardId, handleCancle, isModifyMode}){
     })
     .then( res => {
      alert('등록 완료');
+     handleSuccess();
     })
     .catch(function (error) {     
       console.log(error);
