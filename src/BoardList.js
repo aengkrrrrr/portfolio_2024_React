@@ -22,7 +22,6 @@ function BoardList({ showView, isComplete, data }) {
     Axios.get('http://127.0.0.1:9000/list')
       .then((res) => {
         const data = res.data;
-        console.log("Fetched data:", res.data)
         setBoardList(data);
         setBoardId(0);
         // props.renderComplete(); // 목록 출력 완료 함수가 정의되지 않아 주석 처리
