@@ -12,15 +12,11 @@ function Pro05(){
         <div class="project_ct_r">
           <h4 class="h4 mb-5">롯데웰푸드</h4>
           <div class="tech_wrap df mb-3">
-            <em class="primary_btn">팀</em>
+            <em class="primary_btn">개인</em>
             <em class="primary_btn">HTML</em>
             <em class="primary_btn">CSS</em>
             <em class="primary_btn">JAVACRIPT</em>
             <em class="primary_btn">JQUERY</em>
-          </div>
-          <div class="tech_wrap df">
-            <em class="primary_btn">PHP</em>
-            <em class="primary_btn">MYSQL</em>
           </div>
           <p className="pj_p">시멘틱 태그를 활용하고 웹접근성에 준수하여,<br/>
           클론코딩한 PC반응형 사이트입니다.</p>

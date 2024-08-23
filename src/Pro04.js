@@ -11,15 +11,10 @@ function Pro04(){
         <div className="project_ct_">
           <h4 className="h4 mb-5">나스 코스메틱</h4>
           <div className="tech_wrap df mb-3">
-            <em className="primary_btn">팀</em>
+            <em className="primary_btn">개인</em>
             <em className="primary_btn">HTML</em>
             <em className="primary_btn">CSS</em>
             <em className="primary_btn">JAVACRIPT</em>
-            <em className="primary_btn">JQUERY</em>
-          </div>
-          <div className="tech_wrap df">
-            <em className="primary_btn">PHP</em>
-            <em className="primary_btn">MYSQL</em>
           </div>
           <p className="pj_p">
             기획부터 디자인까지 새롭게 리뉴얼하고,<br/>

@@ -18,10 +18,6 @@ function Pro03(){
             <em className="primary_btn">JAVACRIPT</em>
             <em className="primary_btn">JQUERY</em>
           </div>
-          <div className="tech_wrap df">
-            <em className="primary_btn">PHP</em>
-            <em className="primary_btn">MYSQL</em>
-          </div>
           <p className="pj_p">시멘틱 태그를 활용하고 웹접근성에 준수하여,<br/>
             기획부터 디자인까지 새롭게 리뉴얼한<br/>
             PC반응형 사이트입니다.</p>

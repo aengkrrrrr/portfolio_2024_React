@@ -11,15 +11,11 @@ function Pro05(){
         <div className="project_ct_">
           <h4 className="h4 mb-5">팔공티</h4>
           <div className="tech_wrap df mb-3">
-            <em className="primary_btn">팀</em>
+            <em className="primary_btn">개인</em>
             <em className="primary_btn">HTML</em>
             <em className="primary_btn">CSS</em>
             <em className="primary_btn">JAVACRIPT</em>
             <em className="primary_btn">JQUERY</em>
-          </div>
-          <div className="tech_wrap df">
-            <em className="primary_btn">PHP</em>
-            <em className="primary_btn">MYSQL</em>
           </div>
           <p className="pj_p">기존의 팔공티 사이트에서<br/>
             디자인을 새롭게 하여, 사용성을 높인<br/>
