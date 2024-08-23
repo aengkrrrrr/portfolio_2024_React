@@ -90,6 +90,7 @@ h1{
   padding: 10px 15px;
   text-transform: capitalize;
   font-family: 'SUIT', sans-serif;
+  white-space: nowrap;
 }
 .hover_btn {
   display: inline-block;
