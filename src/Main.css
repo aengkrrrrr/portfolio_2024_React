@@ -104,6 +104,20 @@
   display: block;
   margin-top: 200px;
 }
+.about .about_img {
+  width: 500px;
+  height: 500px;
+  margin: 0 auto;
+  display: block;
+  margin-top: 200px;
+}
+.htmlImg,
+.cssImg,
+.jsImg,
+.reactImg {
+  width: 120px;
+}
+
 
 
 [class^="para_wrap"] {
@@ -484,4 +498,5 @@
 .write_btn_wrap {
   justify-content: space-between;
 }
+
 

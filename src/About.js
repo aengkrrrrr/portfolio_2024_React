@@ -1,7 +1,11 @@
 import React, { useEffect } from 'react';
 import 'aos/dist/aos.css';
 import AOS from 'aos';
-
+import chuImg from './images/92C2FD05-1600-4E46-8091-1959ED19CE06-removebg-preview.png';
+import htmlImg from './images/free-icon-html-5-5968267.png';
+import cssImg from './images/free-icon-css-919826.png';
+import jsImg from './images/free-icon-js-5968292.png';
+import reactImg from './images/png-clipart-react-javascript-angularjs-ionic-github-text-logo-thumbnail-removebg-preview.png';
 function About() {
   useEffect(() => {
     // Initialize AOS
@@ -49,10 +53,18 @@ function About() {
           <em className="ti" data-aos="fade-up">circle02</em>
           <em className="ti" data-aos="fade-up">circle03</em>
         </div>
-        <video muted autoPlay loop>
+        {/* <video muted autoPlay loop>
           <source src="/chu_video.mp4" type="video/mp4" />
           Your browser does not support the video tag.
-        </video>
+        </video> */}
+        <div className='tech_wrap'>
+        <img src={htmlImg} alt='html이미지' className="htmlImg" />
+          
+          <div className='cssImg'></div>
+          <div className='jsImg'></div>
+          <div className='reactImg'></div>
+        </div>
+        <img src={chuImg} alt='미모티콘' className="about_img" />
         <div className="para_wrap">
           <p>Positive Adventurous Cooperative Developer Positive Adventurous Cooperative Developer Positive Adventurous Cooperative Developer Positive Adventurous Cooperative Developer</p>
           <p>Positive Adventurous Cooperative Developer Positive Adventurous Cooperative Developer Positive Adventurous Cooperative Developer Positive Adventurous Cooperative Developer</p>
