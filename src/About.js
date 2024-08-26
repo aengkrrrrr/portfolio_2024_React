@@ -6,6 +6,15 @@ import htmlImg from './images/free-icon-html-5-5968267.png';
 import cssImg from './images/free-icon-css-919826.png';
 import jsImg from './images/free-icon-js-5968292.png';
 import reactImg from './images/png-clipart-react-javascript-angularjs-ionic-github-text-logo-thumbnail-removebg-preview.png';
+import phpImg from './images/images-removebg-preview.png';
+import mysqlImg from './images/png-transparent-mysql-logo-mysql-database-web-development-computer-software-dolphin-marine-mammal-animals-text-thumbnail-removebg-preview.png';
+import jqueryImg from './images/png-clipart-jquery-logo-web-development-jquery-ui-javascript-computer-icons-jqlogo-emblem-label-removebg-preview.png'
+
+
+
+
+
+
 function About() {
   useEffect(() => {
     // Initialize AOS
@@ -57,12 +66,16 @@ function About() {
           <source src="/chu_video.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video> */}
-        <div className='tech_wrap'>
-        <img src={htmlImg} alt='html이미지' className="htmlImg" />
-          
-          <div className='cssImg'></div>
-          <div className='jsImg'></div>
-          <div className='reactImg'></div>
+        <div className='tech_wrap02'>
+          <img src={phpImg} alt='php이미지' className="phpImg" />
+          <img src={mysqlImg} alt='mysql이미지' className="mysqlImg" />
+          <img src={jqueryImg} alt='jquery이미지' className="jqueryImg" />
+        </div>
+        <div className='tech_wrap01'>
+          <img src={htmlImg} alt='html이미지' className="htmlImg" />
+          <img src={cssImg} alt='css이미지' className="cssImg" />
+          <img src={jsImg} alt='js이미지' className="jsImg" />
+          <img src={reactImg} alt='react이미지' className="reactImg" />
         </div>
         <img src={chuImg} alt='미모티콘' className="about_img" />
         <div className="para_wrap">
