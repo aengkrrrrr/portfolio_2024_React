@@ -3,6 +3,7 @@
 @import url("normalize.css");
 @import url("reset.css");
 
+
 :root {
   --font-size: 16px;
   --font-bold:700;
@@ -21,6 +22,8 @@ body {
   --C-black: #000;
   --C-white: #fff;
 
+  -webkit-font-smoothing: antialiased; /* Mac OS 폰트 렌더링 */
+  -moz-osx-font-smoothing: grayscale;  /* 폰트 렌더링 향상 */
   /******* 컬러 */
 }
 

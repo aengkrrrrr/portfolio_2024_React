@@ -1,3 +1,4 @@
+import 'normalize.css';
 import './App.css';
 import './Main.css';
 import './Common.css';
@@ -15,6 +16,7 @@ import Contact from './Contact';
 import Option from './Option';
 import Board from './Board';
 import React, { useRef } from 'react';
+
 
 
 function App() {
