@@ -1,7 +1,7 @@
 import 'normalize.css';
-import './App.css';
-import './Main.css';
-import './Common.css';
+import 'App.css';
+import 'Main.css';
+import 'Common.css';
 import Header from './Header';
 import Footer from './Footer';
 import Intro from './Intro';
