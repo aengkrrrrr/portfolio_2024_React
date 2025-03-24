@@ -3,6 +3,12 @@
 @import url("normalize.css");
 @import url("reset.css");
 
+@font-face {
+  font-family: 'Yapari Trial';
+  src: url('/public/font/YapariTrial-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 
 :root {
   --font-size: 16px;
@@ -28,7 +34,7 @@ body {
 }
 
 
-body {font-family: 'SUIT', sans-serif; background-color: var(--C-secondary); color: var(--C-white); overflow-x: hidden;}
+body {font-family:'SUIT', sans-serif; background-color: var(--C-secondary); color: var(--C-white); overflow-x: hidden;}
 
 .hidden {
   position: relative;

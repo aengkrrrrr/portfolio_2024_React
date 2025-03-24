@@ -1,1 +1,7 @@
-
+@font-face {
+	font-family: 'Yapari Trial', sans-serif;
+	src: url("./font/YapariTrial-Medium.ttf")
+		format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}

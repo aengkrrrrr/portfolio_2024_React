@@ -27,7 +27,7 @@ i, em {font-style:normal;}
 blockquote, q {quotes:none;}
 sub {vertical-align:sub; font-size:smaller; line-height:0;}
 sup {vertical-align:super; font-size:smaller; line-height:0;}
-img, fieldset {vertical-align:middle;}
+/* img, fieldset {vertical-align:middle;} */
 a {color:inherit; vertical-align:inherit; text-decoration:none;}
 a:link, a:hover {text-decoration:none;}
 h1,h2,h3,h4,h5,h6 {color:inherit; font-weight:inherit; font-size: inherit;}

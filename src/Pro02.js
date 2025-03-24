@@ -25,7 +25,7 @@ function Pro02(){
             딥러닝캥거루 LMS 학습 쇼핑몰 사이트의<br/>
             사용자 페이지입니다.</p>
           <div className="link_wrap df aic">
-            <a href="http://srimm3399.dothome.co.kr/clean_kangaroo/" target='_blank'><span class="material-symbols-outlined">open_in_new</span></a>
+            <a href="http://srimm3399.dothome.co.kr/clean_kangaroo/" target='_blank'><span className="material-symbols-outlined">open_in_new</span></a>
             <a href="https://github.com/aengkrrrrr/clean_kangaroo.git" target='_blank'><img src={gitImg} alt='깃허브 이미지' className="link_git" /></a>
           </div>
         </div>

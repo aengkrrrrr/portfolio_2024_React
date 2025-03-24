@@ -23,7 +23,7 @@ function Pro05(){
            </p>
           <div className="link_wrap df aic">
             <a href="http://srimm3399.dothome.co.kr/palgongtea/index.html" target='_blank'><span className="material-symbols-outlined">open_in_new</span></a>
-            <a href="http://srimm3399.dothome.co.kr/m_palgongtea/index.html" target="_blank"><span class="material-symbols-outlined">phone_iphone</span></a>
+            <a href="http://srimm3399.dothome.co.kr/m_palgongtea/index.html" target="_blank"><span className="material-symbols-outlined">phone_iphone</span></a>
             <a href=""><img src={gitImg} alt='깃허브 이미지' className="link_git" /></a>
           </div>
         </div>

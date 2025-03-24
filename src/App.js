@@ -11,12 +11,11 @@ import Pro02 from './Pro02';
 import Pro03 from './Pro03';
 import Pro04 from './Pro04';
 import Pro05 from './Pro05';
-import Pro06 from './Pro06';
 import Contact from './Contact';
 import Option from './Option';
 import Board from './Board';
 import React, { useRef } from 'react';
-
+import './Common';
 
 
 function App() {
@@ -43,7 +42,6 @@ function App() {
       <Pro03></Pro03>
       <Pro04></Pro04>
       <Pro05></Pro05>
-      <Pro06></Pro06>
       <Contact></Contact>
     </main>
     <Footer></Footer>

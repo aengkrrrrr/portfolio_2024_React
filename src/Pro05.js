@@ -21,7 +21,7 @@ function Pro05(){
           <p className="pj_p">시멘틱 태그를 활용하고 웹접근성에 준수하여,<br/>
           클론코딩한 PC반응형 사이트입니다.</p>
           <div className="link_wrap df aic">
-            <a href="http://srimm3399.dothome.co.kr/lottewelfood/index.html" target='_blank'><span class="material-symbols-outlined">open_in_new</span></a>
+            <a href="http://srimm3399.dothome.co.kr/lottewelfood/index.html" target='_blank'><span className="material-symbols-outlined">open_in_new</span></a>
             <a href="" target='_blank'><img src={gitImg} alt='깃허브 이미지' className="link_git" /></a>
           </div>
        </div>
