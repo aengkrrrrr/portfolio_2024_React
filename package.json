@@ -19,6 +19,7 @@
     "reset-css": "^5.0.2",
     "web-vitals": "^2.1.4"
   },
+  "homepage": "/https://aengkrrrrr.github.io/",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
